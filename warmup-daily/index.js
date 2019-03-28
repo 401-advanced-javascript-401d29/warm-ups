@@ -29,26 +29,48 @@ const whileLoop = (array) => {
 whileLoop(numArray);
 
 //map makes a new array
-const map = (array, callback) => {
+const map = (array) => {
   const newArray = []
 
   for(let i = 0 ; i < array.length; i++) {
-    newArray[i] = callback(array[i]);
+    newArray[i] = array[i] +1;
   }
   return newArray;
+
 }
 
 const reduce = (array) => {
+  let sum = 0;
+  for(let i = 0 ; i < array.length ; i++) {
+    sum += array[i];
+  }
+  return sum;
+};
 
+//filtering for the even numbers in array
+
+const filterEven = (array) => {
+  let evenArray = [];
+  for(let i = 0 ; i < array.length ; i++) {
+    if(array[i] % 2 === 0) evenArray.push(array[i]);
+  }
+  return evenArray;
 }
 
-const filter = (array) => {
+//filtering for the odd numbers in array
 
+const filterOdd = (array) => {
+  let oddArray = [];
+  for( let i =0 ; i < array.length ; i ++) {
+    if(array[i] % 2 === 1) oddArray.push(array[i]);
+  }
+  return oddArray;
 }
 
-map(numArray, );
-reduce(numArray);
-filter(numArray);
+console.log(map(numArray), 'i am mapping');
+console.log(reduce(numArray), 'i am reducing');
+console.log(filterEven(numArray), 'i am filtering only even numbers');
+console.log(filterOdd(numArray), 'i am filtering only odd')
 
 
 //////////////////////////////////////////////////////////////

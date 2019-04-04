@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+}
+body {
+  height: 100%;
+}
+
+header, footer {
+  width: 100%;
+  background-color: purple;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+
+}
+
+
+article {
+  background-color: teal;
+  height: 80%;
+  line-height: 80%
+}
+
+nav {
+  background-color: salmon;
+  
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+aside {
+  background-color: greenyellow;
+}

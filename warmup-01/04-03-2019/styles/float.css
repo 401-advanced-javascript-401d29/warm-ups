@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  background-color: lemonchiffon;
+}
+html, body {
+  height: 100%;
+}
+
+header, footer {
+  width: 100%;
+  background-color: grey;
+  height: 80px;
+  color: white;
+  line-height: 80px;
+  text-align: center;
+
+}
+
+main {
+  float: left;
+}
+
